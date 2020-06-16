@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-const Rank = () => {
+const Rank = ({name, entries}) => {
   return (
     <div>
       <div className='white f3'>
-        {'Ping, 你已使用人脸识别技术的次数是...'}
+        {`${name},您已累计使用人脸识别技术...`}
       </div>
-      <div className='white f1'>
-        {'#5'}
+      <div className='white f2'>
+        {`${entries} 次`}
       </div>
     </div>
    
